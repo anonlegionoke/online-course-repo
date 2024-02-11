@@ -1,15 +1,23 @@
+# Online Course Django Application
 
-**General Notes**
+This application can be used as a platform for managing and delivering online courses efficiently. With its intuitive interface and powerful features, both instructors and students can seamlessly interact and engage with course content.
 
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
+## Features
 
-- If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
-- Or you could develop the final project locally by setting up your own Python runtime and IDE
-- Hints for the final project are left on source code files
-- You may choose any cloud platform for deployment (default is IBM Cloud Foundry)
-- Depends on your deployment, you may choose any SQL database Django supported such as SQLite3, PostgreSQL, and MySQL (default is SQLite3)
+- **User Authentication**: Signup and login functionality.
+- **Course Management**: Instructors can create, edit, and delete courses, including adding lessons, assignments, and exams.
+- **Enrollment System**: Students can browse available courses and enroll in them. Instructors can view enrolled students and track their progress.
+- **Lesson Content**: Rich text editor support for creating engaging lesson content with also support for uploading media.
+- **Assignment Submission**: Students can submit assignments online, and instructors can review and grade them.
+- **Exam Functionality**: Create exams with multiple-choice questions, view scores, and results.
+- **Admin Panel**: Powerful admin panel for managing users, courses, enrollments, and site settings.
 
-**ER Diagram**
-For your reference, we have prepared the ER diagram design for the new assesement feature.
-
-![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+## Installation
+You can run the application locally by following the below steps:
+1. Clone the repository: `git clone https://github.com/yourusername/online-course-django.git`
+2. Navigate to the project directory: `cd online-course-django`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Set up environment variables: Copy the `.env.example` file to `.env` and update with your configuration.
+5. Apply database migrations: `python manage.py migrate`
+6. Create a superuser account: `python manage.py createsuperuser`
+7. Run the development server: `python manage.py runserver`
